@@ -11,6 +11,10 @@ import Contact from "../components/Contact.astro";
 import Anaren from "../components/Anaren.astro";
 //Project Components
 import Python from "../components/Python.astro";
+import AleAndAdventures from "../components/games/AleAndAdventures.astro";
+import Hyperadrenaline from "../components/games/Hyperadrenaline.astro";
+import RollOrDie from "../components/games/RollOrDie.astro";
+import Hyperspace from "../components/games/Hyperspace.astro";
 ---
 
 <Layout title="Web Developer Portfolio">
@@ -44,9 +48,9 @@ import Python from "../components/Python.astro";
       <h2
         class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
       >
-        Professional Work
+        Projects I've worked on
       </h2>
-      <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="">
           <Card
             href="anaren"
@@ -98,41 +102,47 @@ import Python from "../components/Python.astro";
       </div>
       <div class="my-8 bg-black">
         <CTA />
-      </div>
-      <h2
+      </div> -->
+      <!-- <h2
         class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
       >
         Fun Projects
-      </h2>
+      </h2> -->
       <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="">
           <Card
-            title="Misc Python Apps"
-            body="Miscellaneous Python applications and scripts I've made to help me learn Python and to use as productivity tools or save me time."
-            tags="Python"
-            github="https://github.com/leabs/misc-python-apps"
+            title="Ale & Adventures"
+            body="UI programmer"
+            href="https://hard-bytes.itch.io/aleandaventures"
           >
-            <Python />
+            <AleAndAdventures />
           </Card>
         </div>
         <div class="">
           <Card
-            title="Misc Python Apps"
-            body="Miscellaneous Python applications and scripts I've made to help me learn Python and to use as productivity tools or save me time."
-            tags="Python"
-            github="https://github.com/leabs/misc-python-apps"
+            title="Roll Or Die"
+            body="Gameplay programmer"
+            href="https://hard-bytes.itch.io/roll-or-die"
           >
-            <Python />
+            <RollOrDie />
           </Card>
         </div>
         <div class="">
           <Card
-            title="Misc Python Apps"
-            body="Miscellaneous Python applications and scripts I've made to help me learn Python and to use as productivity tools or save me time."
-            tags="Python"
-            github="https://github.com/leabs/misc-python-apps"
+            title="Hyper Adrenaline"
+            body="Gameplay/AI/Technical Programmer"
+            href="https://hard-bytes.itch.io/hyper-adrenaline"
           >
-            <Python />
+            <Hyperadrenaline />
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            title="HYPERSPACE"
+            body="Level Programmer/Designer"
+            live="http://cpcretrodev.byterealms.com/wp-content/uploads/contest/2020/games/Hyperspace_Hardbytes.zip"
+          >
+            <Hyperspace />
           </Card>
         </div>
       </div>
