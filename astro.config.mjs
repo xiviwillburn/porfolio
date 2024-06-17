@@ -11,5 +11,12 @@ export default defineConfig({
   site: 'https://xiviwillburn.github.io',
   build: {
     assets: 'astro'
-  }
+  },
+  URL:{  
+    title: 'Link',
+    name: 'href',
+    type: 'url',
+    validation: Rule => Rule.uri({
+      scheme: ['http', 'https', 'mailto', 'tel']
+    })}
 });
