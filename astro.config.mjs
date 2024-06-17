@@ -7,7 +7,6 @@ export default defineConfig({
     service: squooshImageService(),
   },
   integrations: [tailwind()],
-  site: `xiviwillburn.github.io`,
   base: 'portfolio',
   output: 'static',
   outDir: './dist',
