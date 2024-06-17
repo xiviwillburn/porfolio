@@ -9,9 +9,10 @@ import AleAndAdventures from "../components/games/AleAndAdventures.astro";
 import Hyperadrenaline from "../components/games/Hyperadrenaline.astro";
 import RollOrDie from "../components/games/RollOrDie.astro";
 import Hyperspace from "../components/games/Hyperspace.astro";
+import Avatar from "../components/Avatar.astro";
 ---
 
-<Layout title="Web Developer Portfolio">
+<Layout title="Ivan's Portfolio">
   <div id="contents">
     <main class="container">
       <div class="mb-16">
@@ -68,6 +69,9 @@ import Hyperspace from "../components/games/Hyperspace.astro";
       </div>
       <div class="my-8">
         <Contact />
+      </div>
+      <div class="credit">
+        Template made by <a href="https://github.com/leabs" style="color: blueviolet;">Steven Leabo</a> that can be found on <a href="https://github.com/leabs/shadowstack-portfolio" style="color: blueviolet;">GitHub</a>. Thank you!
       </div>
     </main>
   </div>
@@ -164,6 +168,11 @@ import Hyperspace from "../components/games/Hyperspace.astro";
 
   summary:hover {
     cursor: pointer;
+  }
+
+  .credit{
+    font-size:x-small; 
+    color: gray;
   }
 </style>
 
