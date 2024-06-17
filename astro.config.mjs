@@ -7,7 +7,7 @@ export default defineConfig({
     service: squooshImageService(),
   },
   integrations: [tailwind()],
-  base: 'docs',
+  base: 'portfolio\\docs',
   outDir:'docs',
   output: 'static',
   build: {
