@@ -10,7 +10,7 @@ export default defineConfig({
   site: `xiviwillburn.github.io`,
   base: 'portfolio',
   output: 'static',
-  outDir: './docs',
+  outDir: './dist',
   build: {
     assets: 'astro'
   }
