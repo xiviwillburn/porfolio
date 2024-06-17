@@ -7,4 +7,10 @@ export default defineConfig({
     service: squooshImageService(),
   },
   integrations: [tailwind()],
+  site: `https://www.ivanpomares.com`,
+  output: 'static',
+  outDir: './docs',
+  build: {
+    assets: 'astro'
+  }
 });
