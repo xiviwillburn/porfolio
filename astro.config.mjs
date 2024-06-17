@@ -7,7 +7,7 @@ export default defineConfig({
     service: squooshImageService(),
   },
   integrations: [tailwind()],
-  base: 'portfolio',
+  base: 'portfolio/docs',
   output: 'static',
   build: {
     assets: 'astro'
