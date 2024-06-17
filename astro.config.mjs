@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [tailwind()],
   base: './docs',
   output: 'static',
-  outDir: 'docs',
+  outDir: 'dist',
   site: 'https://xiviwillburn.github.io/porfolio',
   build: {
     assets: 'astro'
