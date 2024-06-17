@@ -8,6 +8,7 @@ export default defineConfig({
   },
   integrations: [tailwind()],
   site: `xiviwillburn.github.io`,
+  base: 'portfolio',
   output: 'static',
   outDir: './docs',
   build: {
