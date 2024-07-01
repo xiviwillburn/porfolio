@@ -9,6 +9,7 @@ import AleAndAdventures from "../components/games/AleAndAdventures.astro";
 import Hyperadrenaline from "../components/games/Hyperadrenaline.astro";
 import RollOrDie from "../components/games/RollOrDie.astro";
 import Hyperspace from "../components/games/Hyperspace.astro";
+import Sanguinaria from "../components/games/Sanguinaria.astro";
 ---
 
 <Layout title="Ivan's Portfolio">
@@ -29,6 +30,15 @@ import Hyperspace from "../components/games/Hyperspace.astro";
         Projects I've worked on
       </h2>
       <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="">
+          <Card
+            title="Sanguinaria"
+            body="Gameplay/Technical Audio"
+            steam="https://store.steampowered.com/app/2984200/Sanguinaria/"
+          >
+            <Sanguinaria />
+          </Card>
+        </div>
         <div class="">
           <Card
             title="Ale & Adventures"
