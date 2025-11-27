@@ -1,14 +1,14 @@
 ---
 import { Image } from 'astro:assets';
-import what from '../../assets/Sanguinaria.png';
+import what from '../../assets/repo600x900.jpg';
 import Card from '../Card.astro';
 ---
 
 <div class="">
     <Card
-        title="Sanguinaria"
-        body="Gameplay/Technical Audio"
-        steam="https://store.steampowered.com/app/2984200/Sanguinaria/"
+    title="REPO RTC (Remote Trolling Commands)"
+    body="A mod for the game R.E.P.O. that allows to invoke RPCs on demand using the ingame text chat"
+    github="https://github.com/xiviwillburn/RepoRTCMod"
     >
         <div>
             <Image
@@ -17,15 +17,13 @@ import Card from '../Card.astro';
                 alt=""
                 densities={[1, 2, 3]} 
             />
-            <style>
-            .project-image {
-                width: 100%;
-                height: auto;
-            }
-            </style>
         </div>
+        <style>
+            .project-image {
+            width: 100%;
+            height: auto;
+            }
+        </style>
     </Card>
 </div>
-
-
-
+ 

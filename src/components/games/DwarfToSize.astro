@@ -1,20 +1,30 @@
 ---
 import { Image } from 'astro:assets';
 import what from '../../assets/DwarfToSize.png';
+import Card from '../Card.astro';
 ---
 
-<div>
-  <Image
-    class="project-image border  border-black"
-    src={what}
-    alt=""
-    densities={[1, 2, 3]} 
-  />
+<div class="">
+    <Card
+        title="Dwarf To Size"
+        body="Gameplay/UI"
+        itchio="https://hard-bytes.itch.io/dwarf-to-size"
+    >
+        <div>
+            <Image
+                class="project-image border  border-black"
+                src={what}
+                alt=""
+                densities={[1, 2, 3]} 
+            />
+        </div>
+        <style>
+            .project-image {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+    </Card>
 </div>
 
-<style>
-  .project-image {
-    width: 100%;
-    height: auto;
-  }
-</style>
+

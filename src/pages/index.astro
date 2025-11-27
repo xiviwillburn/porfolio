@@ -11,6 +11,8 @@ import RollOrDie from "../components/games/RollOrDie.astro";
 import Hyperspace from "../components/games/Hyperspace.astro";
 import Sanguinaria from "../components/games/Sanguinaria.astro";
 import DwarfToSize from "../components/games/DwarfToSize.astro";
+import RepoMod from "../components/mods/RepoMod.astro";
+import JohnCC from "../components/games/JohnCC.astro";
 ---
 
 <Layout title="Ivan's Portfolio">
@@ -18,74 +20,41 @@ import DwarfToSize from "../components/games/DwarfToSize.astro";
     <main class="container">
       <div class="mb-16">
         <Heading />
-        <p
-          class="mt-4 text-lg text-zinc-500 dark:text-zinc-400 font-light lg:text-xl"
-        >
-           Hello! I am Ivan and I develop Videogames.
-           <!-- <a href="#contact" class="underline text-gray-300">Contact me!</a> -->
+      </h2>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400 font-light lg:text-xl">
+            I work where design and code meet. I’ve spent years building, tweaking, and sometimes breaking games to understand them better. From reverse-engineering classic mechanics to building new ones in Unity or Unreal, whether creating from scratch or dissecting the moving parts I focus on making systems feel right—and fixing them when they don’t. Comfortable across the pipeline, I bring a hands-on, systems-first mindset shaped by real-world problem-solving.</p><br/>            
         </p>
       </div>
       <h2
         class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
       >
-        Projects I've worked on
+        Games that I've worked on
+      </h2>
+      <div class="mx-auto grid grid-cols-1 md:grid-cols-3 justify-content:center gap-4">
+        <JohnCC/>
+        <Sanguinaria/>
+        <DwarfToSize/>
+        <AleAndAdventures/>
+        <RollOrDie/>
+        <Hyperadrenaline/>
+        <div></div>
+        <Hyperspace/>
+      </div>
+      <h2
+        class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
+      >
+        Mods that I've worked on
       </h2>
       <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="">
-          <Card
-            title="Sanguinaria"
-            body="Gameplay/Technical Audio"
-            steam="https://store.steampowered.com/app/2984200/Sanguinaria/"
-          >
-            <Sanguinaria />
-          </Card>
-        </div>
-        <div class="">
-          <Card
-            title="Dwarf To Size"
-            body="Gameplay/UI"
-            href="https://hard-bytes.itch.io/dwarf-to-size"
-          >
-            <DwarfToSize />
-          </Card>
-        </div>
-        <div class="">
-          <Card
-            title="Ale & Adventures"
-            body="UI programmer"
-            href="https://hard-bytes.itch.io/aleandaventures"
-          >
-            <AleAndAdventures />
-          </Card>
-        </div>
-        <div class="">
-          <Card
-            title="Roll Or Die"
-            body="Gameplay programmer"
-            href="https://hard-bytes.itch.io/roll-or-die"
-          >
-            <RollOrDie />
-          </Card>
-        </div>
-        <div class="">
-          <Card
-            title="Hyper Adrenaline"
-            body="Gameplay/AI/Technical Programmer"
-            href="https://hard-bytes.itch.io/hyper-adrenaline"
-          >
-            <Hyperadrenaline />
-          </Card>
-        </div>
-        <div class="">
-          <Card
-            title="HYPERSPACE"
-            body="Level Programmer/Designer"
-            live="http://cpcretrodev.byterealms.com/wp-content/uploads/contest/2020/games/Hyperspace_Hardbytes.zip"
-          >
-            <Hyperspace />
-          </Card>
-        </div>
+        <div></div>
+        <RepoMod/>
       </div>
+      <h3 class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2">
+        About me 
+      </h3>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400 font-light lg:text-xl">
+        I’ve spent the last several years building, modifying, and understanding games not just to make them run, but to make them work. My background is in computer engineering, but the real education came from breaking things until I knew how to fix them. Driven by curiosity, trial and error, and a lot of late nights trying to figure out why something broke. That’s still the part I enjoy most: not just building something but also understanding it deeply.</p><br/>            
+        </p>
       <div class="my-8">
         <Contact />
       </div>

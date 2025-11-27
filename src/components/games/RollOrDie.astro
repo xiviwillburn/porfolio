@@ -1,20 +1,30 @@
 ---
 import { Image } from 'astro:assets';
 import what from '../../assets/Roll.png';
+import Card from '../Card.astro';
 ---
 
-<div>
-  <Image
-    class="project-image border  border-black"
-    src={what}
-    alt=""
-    densities={[1, 2, 3]} 
-  />
+<div class="">
+    <Card
+        title="Roll Or Die"
+        body="Gameplay programmer"
+        itchio="https://hard-bytes.itch.io/roll-or-die"
+    >
+    <div>
+        <Image
+            class="project-image border  border-black"
+            src={what}
+            alt=""
+            densities={[1, 2, 3]} 
+        />
+    </div>
+    <style>
+        .project-image {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    </Card>
 </div>
 
-<style>
-  .project-image {
-    width: 100%;
-    height: auto;
-  }
-</style>
+

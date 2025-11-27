@@ -5,11 +5,11 @@ interface Props {
   tags?: string;
   github?: string;
   live?: string;
-  href?: string;
+  itchio?: string;
   steam?: string;
 }
 
-const { title, body, tags, github, live, href,steam } = Astro.props;
+const { title, body, tags, github, live, itchio: href,steam } = Astro.props;
 ---
 
 <div class="border-2 border-gray-700 border-zinc-900">
