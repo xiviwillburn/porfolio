@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import what from '../../assets/eft.jpg';
+import Card from '../Card.astro';
+---
+
+<div class="">
+    <Card
+    title="SPT - Synthetik Weapon Variants"
+    body="A WIP mod for EFT that adds weapon variants based off the game Synthetik. The mod not only changes stats from the weapons but also adds more functionality. Client and Server mod, also applies to other mods"
+    github="https://github.com/xiviwillburn/SPT-synthetik-mod"
+    >
+        <div>
+            <Image
+                class="project-image border  border-black"
+                src={what}
+                alt=""
+                densities={[1, 2, 3]} 
+            />
+        </div>
+        <style>
+            .project-image {
+            width: 100%;
+            height: auto;
+            }
+        </style>
+    </Card>
+</div>
+ 

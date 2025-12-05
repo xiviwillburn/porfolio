@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import what from '../../assets/repo600x900.jpg';
+import Card from '../Card.astro';
+---
+
+<div class="">
+    <Card
+    title="REPO Main Menu Music"
+    body="A mod for the game R.E.P.O. that allows you to change the main menu music using a local file or a remote resource"
+    github="https://github.com/xiviwillburn/RepoCustomMainMenuMusic"
+    >
+        <div>
+            <Image
+                class="project-image border  border-black"
+                src={what}
+                alt=""
+                densities={[1, 2, 3]} 
+            />
+        </div>
+        <style>
+            .project-image {
+            width: 100%;
+            height: auto;
+            }
+        </style>
+    </Card>
+</div>
+ 
