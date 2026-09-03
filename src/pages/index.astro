@@ -13,6 +13,7 @@ import Sanguinaria from "../components/games/Sanguinaria.astro";
 import DwarfToSize from "../components/games/DwarfToSize.astro";
 import RepoMod from "../components/mods/RepoMod.astro";
 import JohnCC from "../components/games/JohnCC.astro";
+import TheWitchingHour from "../components/games/TheWitchingHour.astro";
 import RepoMod2 from "../components/mods/RepoMod2.astro";
 import EFTSynthetik from "../components/mods/EFTSynthetik.astro";
 ---
@@ -32,22 +33,22 @@ import EFTSynthetik from "../components/mods/EFTSynthetik.astro";
       >
         Games that I've worked on
       </h2>
-      <div class="mx-auto grid grid-cols-1 md:grid-cols-3 justify-content:center gap-4">
-        <JohnCC/>
-        <Sanguinaria/>
-        <DwarfToSize/>
-        <AleAndAdventures/>
-        <RollOrDie/>
-        <Hyperadrenaline/>
-        <div></div>
-        <Hyperspace/>
+      <div class="grid">
+        <TheWitchingHour />
+        <JohnCC />
+        <Sanguinaria />
+        <DwarfToSize />
+        <AleAndAdventures />
+        <RollOrDie />
+        <Hyperadrenaline />
+        <Hyperspace />
       </div>
       <h2
         class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
       >
         Mods that I've worked on
       </h2>
-      <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="grid">
         <EFTSynthetik/>
         <RepoMod/>
         <RepoMod2/>
@@ -82,7 +83,36 @@ import EFTSynthetik from "../components/mods/EFTSynthetik.astro";
     overflow: hidden;
   }
   .project-cards {
+    max-width: 250px;
   }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem; 
+  }
+  .item {
+    display: flex;
+    flex: 0 0 calc((100% - 2rem) / 3);
+  }
+    .item > img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+  .item:last-child:nth-child(3n - 1) {
+    grid-column-end: -2;
+  }
+
+  .item:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 4;
+  }
+
+  .item:last-child:nth-child(3n - 2) {
+    grid-column-end: 1;
+  }
+
   .video-wrapper {
     background: #111111;
     padding: calc(1.5rem - 1px);

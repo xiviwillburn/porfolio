@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import what from '../../assets/thewitchinghour.png';
+import Card from '../Card.astro';
+---
+
+<div class="item">
+    <Card
+        title="The Witching Hour"
+        body="Gameplay Programmer"
+        itchio="https://hard-bytes.itch.io/the-witching-hour"
+    >
+        <div>
+        <Image
+            class="project-image border  border-black"
+            src={what}
+            alt=""
+            densities={[1, 2, 3]} 
+        />
+        </div>
+        <style>
+            .project-image {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        </style>
+    </Card>
+</div>

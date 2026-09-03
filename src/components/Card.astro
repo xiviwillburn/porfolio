@@ -15,13 +15,13 @@ const { title, body, body2, tags, github, live, itchio: href,steam } = Astro.pro
 
 <div class="border-2 border-gray-700 border-zinc-900">
   <slot />
-  <div class="p-5">
+  <div class="p-5 text">
     {
       href && (
         <a href={href} target="_blank" rel="noopener noreferrer">
           <h5
             transition:name="project-title"
-            class="industry mb-2 text-2xl font-bold tracking-tight text-white underline"
+            class="industry mb-2 text-2xl font-bold tracking-tight text-white underline max-heihgt"
           >
             {title}
           </h5>
@@ -146,6 +146,10 @@ const { title, body, body2, tags, github, live, itchio: href,steam } = Astro.pro
 </div>
 
 <style>
+    .text{
+         align-self: flex-end;
+    }
+
   .link-card {
     list-style: none;
     display: flex;
